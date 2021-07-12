@@ -1,4 +1,6 @@
-package academy.learnprogramming.dataStructure;
+package Data_Structures.Arrays;
+
+import java.util.Arrays;
 
 public class ImplementingAnArray {
   String[] array=new String[1];
@@ -68,6 +70,24 @@ public class ImplementingAnArray {
 
     public int length() {
         return length;
+    }
+
+    public static void main(String[] args){
+        ImplementingAnArray dynamicArray=new ImplementingAnArray();
+        dynamicArray.push("apple");
+        dynamicArray.push("ball");
+        dynamicArray.push("cat");
+        dynamicArray.push("dog");
+        System.out.println("Array-Length: " + dynamicArray.length());
+        System.out.println("array: " + Arrays.toString(dynamicArray.getArray()));
+        System.out.println("item at index 2: " + dynamicArray.get(2));
+        dynamicArray.replace(1, "world");
+        System.out.println("array: " + Arrays.toString(dynamicArray.getArray()));
+        dynamicArray.pop();
+        System.out.println("array: " + Arrays.toString(dynamicArray.getArray()));
+        dynamicArray.delete(1);
+        System.out.println("array: " + Arrays.toString(dynamicArray.getArray()));
+        System.out.println("Array-Length: " + dynamicArray.length());
     }
 //    public void print(){
 //     for(int i=0;i<array.length;i++){

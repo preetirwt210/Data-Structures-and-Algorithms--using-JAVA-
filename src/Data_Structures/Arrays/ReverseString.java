@@ -1,4 +1,4 @@
-package academy.learnprogramming.dataStructure;
+package Data_Structures.Arrays;
 
 public class ReverseString {
     //first reverse method
@@ -14,5 +14,10 @@ public class ReverseString {
         StringBuilder sb = new StringBuilder(str);
         sb.reverse();
         return sb.toString();
+    }
+    public static void main(String[] args){
+        System.out.println("Reverse String #1 : "+ReverseString.reverse1("Preeti Rawat"));
+        System.out.println("Reverse String #2: "+ReverseString.reverse2("kavita"));
+
     }
 }

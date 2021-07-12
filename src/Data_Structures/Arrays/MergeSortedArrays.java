@@ -1,4 +1,6 @@
-package academy.learnprogramming.dataStructure;
+package Data_Structures.Arrays;
+
+import java.util.Arrays;
 
 public class MergeSortedArrays {
     public static int[] mergeArray(int[] arr1,int[] arr2) {
@@ -27,6 +29,15 @@ public class MergeSortedArrays {
             k++;
         }
        return mergedArray;
+    }
+    public static void main(String[] args){
+        int[] arr1={1,2,6,9,34,45};
+     int[] arr2={3,4,8,33,66,67,80};
+     System.out.println("Length of array1: " +arr1.length);
+     System.out.println("Length of array2: " + arr2.length);
+    int[] arr3= MergeSortedArrays.mergeArray(arr2,arr1);
+     System.out.println("Length of array3: "+ arr3.length);
+    System.out.println(Arrays.toString(arr3));
     }
 
 }
