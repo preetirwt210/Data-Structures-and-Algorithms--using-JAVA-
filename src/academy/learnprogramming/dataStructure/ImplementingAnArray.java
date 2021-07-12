@@ -1,4 +1,4 @@
-package academy.learnprogramming;
+package academy.learnprogramming.dataStructure;
 
 public class ImplementingAnArray {
   String[] array=new String[1];

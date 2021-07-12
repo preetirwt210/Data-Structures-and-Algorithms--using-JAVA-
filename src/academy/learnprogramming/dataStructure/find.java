@@ -1,4 +1,4 @@
-package academy.learnprogramming;
+package academy.learnprogramming.dataStructure;
 
 public class find {
     public static void findNemo(String[] arr){
