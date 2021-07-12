@@ -1,5 +1,6 @@
 package academy.learnprogramming.dataStructure;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -28,7 +29,15 @@ public class Main {
 //        System.out.println("array: " + Arrays.toString(dynamicArray.getArray()));
 //        System.out.println("Array-Length: " + dynamicArray.length());
 
-           System.out.println("Reverse String #1 : "+ReverseString.reverse1("Preeti Rawat"));
-     System.out.println("Reverse String #2: "+ReverseString.reverse2("kavita"));
+//           System.out.println("Reverse String #1 : "+ReverseString.reverse1("Preeti Rawat"));
+//     System.out.println("Reverse String #2: "+ReverseString.reverse2("kavita"));
+
+     int[] arr1={1,2,6,9,34,45};
+     int[] arr2={3,4,8,33,66,67,80};
+     System.out.println("Length of array1: " +arr1.length);
+     System.out.println("Length of array2: " + arr2.length);
+    int[] arr3=MergeSortedArrays.mergeArray(arr2,arr1);
+     System.out.println("Length of array3: "+ arr3.length);
+    System.out.println(Arrays.toString(arr3));
     }
 }
