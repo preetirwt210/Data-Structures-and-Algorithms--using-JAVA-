@@ -1,29 +1,29 @@
 package Data_Structures.trees;
 
-public class Node {
+public class BinarySearchNode {
     int value;
-    Node right;
-    Node left;
+    BinarySearchNode right;
+    BinarySearchNode left;
 
-    public Node(int value) {
+    public BinarySearchNode(int value) {
         this.value = value;
         this.right = null;
         this.left = null;
     }
 
-    public Node getLeft() {
+    public BinarySearchNode getLeft() {
         return left;
     }
 
-    public void setLeft(Node left) {
+    public void setLeft(BinarySearchNode left) {
         this.left = left;
     }
 
-    public Node getRight() {
+    public BinarySearchNode getRight() {
         return right;
     }
 
-    public void setRight(Node right) {
+    public void setRight(BinarySearchNode right) {
         this.right = right;
     }
 
