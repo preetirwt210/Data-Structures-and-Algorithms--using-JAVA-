@@ -14,8 +14,12 @@ public class MergeSort {
     public void divideArray(int lowerIndex, int higherIndex){
         if(lowerIndex<higherIndex){
             int middle=lowerIndex+(higherIndex-lowerIndex)/2;
+            //divide for left array
             divideArray(lowerIndex,middle);
+            //divide for right array
             divideArray(middle+1, higherIndex);
+
+            //merge the divided left and right array
             mergeArray(lowerIndex,middle,higherIndex);
         }
     }
