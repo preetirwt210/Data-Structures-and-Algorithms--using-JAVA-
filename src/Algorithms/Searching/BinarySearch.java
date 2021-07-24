@@ -1,6 +1,7 @@
 package Algorithms.Searching;
 
 public class BinarySearch {
+
     public static void search(int[] intArray){
         int search=8;
         int li=0;
@@ -16,7 +17,6 @@ public class BinarySearch {
             }
             else if(intArray[mi]>=search){
                 hi=mi-1;
-
             }
             else if(intArray[mi] <=search){
                 li=mi+1;
