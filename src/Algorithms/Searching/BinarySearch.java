@@ -32,4 +32,5 @@ public class BinarySearch {
         System.out.println("Binary Search: ");
         BinarySearch.search(intArray);
     }
+
 }
